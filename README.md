@@ -1,7 +1,7 @@
-# scrolling-UX (WIP)
+# Scrolling Analytics (WIP)
 Open source application that keeps track of what you are scrolling and how much time do you spend on each window. Improve your user experience!
 
-In order to add scrolling-UX to your web site, download and include the .js file in your web application. We will send information about the current scrolling status in the web page and you can see reports of which pages and sections are most seen!
+In order to add _Scrolling Analytics_ to your web site, download and include the .js file in your web application. We will send information about the current scrolling status in the web page and you can see reports of which pages and sections are most seen!
 
 ###Overview
 
