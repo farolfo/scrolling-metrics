@@ -6,17 +6,29 @@
 //     http://farolfo.github.io/scrolling-analytics
 
 (function() {
-      setInterval(dispatchSample, 1000);
+    setInterval(dispatchSample, 1000);
 
-      function dispatchSample() {
-          var timeStamp = (new Date()).getTime(),
-              scrollPosition = calculatePosition(),
-              url = ;
+    function dispatchSample() {
+        var sample = {
+            url: getUrl(),
+            timestamp: (new Date()).getTime(),
+            sample: collectSample()
+        };
 
-          // send via web socket the collected sample
-      }
+        // send via web socket the collected sample
+        alert(JSON.stringify(sample));
+    }
 
-      function calculatePosition() {
-          
-      }
+    function collectSample() {
+        return {
+            clientWindowHeight: window.innerHeight,    // window client height
+            offsetMax: document.body.scrollHeight,     // how much can we scroll  
+            heightOffsetTop: document.body.scrollTop   // height offset at the top
+        };
+    }
+
+    function getUrl() {
+        return document.url;
+    }
+
 })();
