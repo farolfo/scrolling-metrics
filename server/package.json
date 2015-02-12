@@ -1,0 +1,7 @@
+{
+  "name": "scrolling-analytics",
+  "description": "Scrolling analytics",
+  "devDependencies": {
+    "nodejs-websocket": "*"
+  }
+}

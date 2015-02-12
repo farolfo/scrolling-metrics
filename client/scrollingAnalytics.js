@@ -8,6 +8,9 @@
 (function() {
     setInterval(dispatchSample, 1000);
 
+    this.scrollingAnalyticsSocket = new WebSocket("ws://localhost:8001");
+
+
     function dispatchSample() {
         var sample = {
             url: getUrl(),
@@ -16,13 +19,14 @@
         };
 
         // send via web socket the collected sample
-        alert(JSON.stringify(sample));
+        console.log("Sending " + JSON.stringify(sample));
+        scrollingAnalyticsSocket.send(JSON.stringify(sample));
     }
 
     function collectSample() {
         return {
             clientWindowHeight: window.innerHeight,    // window client height
-            offsetMax: document.body.scrollHeight,     // how much can we scroll  
+            offsetMax: document.body.scrollHeight,     // how much can we scroll
             heightOffsetTop: document.body.scrollTop   // height offset at the top
         };
     }
