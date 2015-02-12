@@ -5,7 +5,7 @@ In order to add _Scrolling Analytics_ to your web site, download and include the
 
 ###Overview
 
-We don't want execute code on the main browser thread where the client web app is running. In order to achive this, we will use [service workers"](http://www.html5rocks.com/en/tutorials/service-worker/introduction/) to execute our code and send the scrolling data to our servers.
+We don't want execute code on the main browser thread where the client web app is running. In order to achive this, we will use [service workers](http://www.html5rocks.com/en/tutorials/service-worker/introduction/) to execute our code and send the scrolling data to our servers.
 
 In order to collect the scorlling browser's data, we will use the properties:
 
