@@ -1,6 +1,6 @@
 {
-  "name": "scrolling-analytics",
-  "description": "Scrolling analytics",
+  "name": "scrolling-metrics",
+  "description": "Scrolling Metrics",
   "devDependencies": {
     "nodejs-websocket": "*"
   }
