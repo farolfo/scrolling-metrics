@@ -1,4 +1,4 @@
-# Scrolling Metrics
+# ![Scrolling Metrics](/app/img/fullBrand.png)
 Keep track of the most read sections of your web application by tracking the scrolling.
 
 *Improve your user experience!*

@@ -1,0 +1,14 @@
+.brand {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.brand {
+  font-family: 'Pacifico', cursive;
+  background-image: url('../../img/mouse.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 56px;
+  background-size: 50px 50px;
+  font-size: 36px;
+  color: #144955;
+}
